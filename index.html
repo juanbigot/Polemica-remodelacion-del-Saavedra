@@ -102,7 +102,7 @@
         <textarea class="form-comentario" placeholder="Comentario acá sobre el parque"></textarea>
         
         <div class="formulario-caja-boton">
-            <button type="button" class="botonA">Enviar</button>
+            <button type="button" class="botonA" onclick="document.getElementById('miPopup').showModal()">Enviar</button>
         </div>
     </div>
 </section>
@@ -121,5 +121,10 @@
         
     </footer>
 
+     <dialog id="miPopup" class="popup-modal">
+        <p class="popup-texto">Comentario enviado</p>
+        <button type="button" class="botonA" onclick="document.getElementById('miPopup').close()">Aceptar</button>
+    </dialog>
+    
 </body>
 </html>
